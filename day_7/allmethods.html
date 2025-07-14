@@ -1,0 +1,111 @@
+<script>
+
+// length;(returns the length of the string)
+let str='Welcome Sreeja';
+console.log(str.length);   //this returns 14 (space included)
+
+
+// toUpperCase();(converts into uppercase)
+console.log(str.toUpperCase());
+
+
+// toLowerCase();(lowercase)
+console.log(str.toLowerCase());
+
+
+// charAt(); (finds the char at the mentioned index)
+console.log(str.charAt(10));
+
+
+// at() (same as charAt but works for both positive and negative indices)
+console.log(str.at(10));
+console.log(str.at(-2));
+
+// charCodeAt();(gets the code for the char at the index)
+console.log(str.charCodeAt(2)); //(does not work for negative index)
+
+
+// concat();(concats the string)
+console.log(str.concat('reddy'));
+
+// indexOf();(returns the index of the char)
+console.log(str.indexOf('S')); 
+console.log(str.indexOf('s'));   
+
+
+// lastIndexOf();(gives the index of last occurence of the char)
+console.log(str.lastIndexOf('s'));
+console.log(str.lastIndexOf('e'));
+
+
+// includes(); (true if incluse false if not)
+console.log(str.includes('Sreeja')); // true
+console.log(str.includes('Hoya'));//false
+
+// match();(matches and gives the match of first time matched)
+let str1= 'hello sreejs sreeja sree'
+let res1= str1.match(/sree/);
+console.log(res1)
+
+let res2= str1.match(/sree/g);//(matches all)(returns no of times matched)
+console.log(res2)
+
+let res3= str1.match(/sree/gi);//(ignores case)
+console.log(res3)
+
+
+// matchAll()   // returns iterator
+let res4= str1.matchAll(/sree/g);
+console.log(res4)
+
+
+// replace();
+let res5= str1.replace('sreejs','babs');
+console.log(res5);
+
+// trim()(trims the first and last spaces)
+let strnew= '   hello hi    ';
+let res6= strnew.trim();
+console.log(res6);
+
+// replaceAll();(replaces not only the first one but evrything)
+
+// repeat();
+let ress=str1.repeat(3);
+console.log(ress);
+
+// slice(start, end) (can take negative values)
+let resslice= strnew.slice(1,-1);
+console.log(resslice);
+
+// substring(start, end)( same as slice but cannot take -ve values)
+
+// substr(start, length) ( same but you will give length utill which to remove)
+
+// split()( it splits before and after the given parameter)
+let ressplit= strnew.split('h');
+console.log(ressplit);
+
+
+// search(regex) (returns index of the first match)
+let ressearch= str1.match(/sree/g);
+console.log(ressearch);
+
+
+
+// eval(); (eval() is from Window Object)(this is not really necessary)
+
+
+// localeCompare()
+console.log("apple".localeCompare("banana")); // -1 (apple < banana)
+console.log("banana".localeCompare("apple")); // 1  (banana > apple)
+console.log("cherry".localeCompare("cherry")); // 0 (same)
+
+//fromcharcode
+let strn='sreeja';
+console.log(strn.fromcharcode())
+
+
+
+
+</script>

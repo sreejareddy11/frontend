@@ -1,0 +1,34 @@
+<script>
+    
+    let cars = ['Tata', 'Honda', 'Maruti', 'Hyundai'];
+
+    // 1. Loop
+    for (let i = 0; i < cars.length; i++) {
+        console.log(i, cars[i]);
+    }
+    console.log('=============')
+
+    // 2. for-in  (ES_6 2015)
+    for (i in cars) {
+        console.log(i, cars[i]);
+    }
+    console.log('=============')
+
+    // 3. for-of  (ES_6 2015)
+    for (val of cars) {
+        console.log(val);
+    }
+    console.log('=============')
+
+    // 4. forEach
+    cars.forEach(function printEachElement(val, ind) {
+        console.log(val, ind)
+    });
+    console.log('=============');
+
+    cars.forEach(val => console.log(val));
+
+     let arr = [10, 20, 30, 40, 50];
+    let newArr = arr.with(2, 35);
+    console.log(arr, newArr);
+</script>

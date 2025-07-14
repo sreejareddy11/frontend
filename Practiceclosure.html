@@ -1,0 +1,57 @@
+<script>
+    var a = 10;  // global
+    let b = 20;  // script 
+    function f1() {
+        let c = 30;  // closure scoped variable
+        function f2() {
+            let d = 40;
+            console.log(a, b, c, d);
+        }
+        f2();
+        console.dir(f2)
+    }
+    f1();
+    console.dir(f1)
+</script>
+
+
+
+<!-- example two  -->
+<body>
+    <button onclick="increment()">Increment</button>
+    <button onclick="sayHi()">sayHi</button>
+    <h2>Count:<span>0</span></h2>
+
+    <script>
+        function increment() {
+            let count = 0;
+            count++;
+            document.querySelector('span').innerHTML = count;
+        }
+        function sayHi() {
+            count++;
+            document.querySelector('span').innerHTML = count;
+            console.log('Hiiiiiii');
+        }
+    </script>
+</body>
+
+
+ <script>
+        function initializeCount() {
+            let count = 0; // 1
+            return function () {
+                count++;  // n
+                document.querySelector('span').innerHTML = count; // n
+            }
+        }
+        let increment = initializeCount();  // global variable
+        console.dir(increment);
+
+        function sayHi() {
+            count++;
+            document.querySelector('span').innerHTML = count;
+            console.log('Hiiiiiii')
+        }
+    </script>
+

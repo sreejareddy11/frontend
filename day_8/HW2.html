@@ -1,0 +1,106 @@
+ <!-- 1. Print the occurence of each character in a string
+   input: 'entertainment'
+   output: { e:3 , n:2 , t: 3 ....} -->
+<script>
+   let str='entertainment';
+   for(i=0;i<str.length;i++)
+{
+   let pq= str.count(i);///not finished
+   console.log(pq);
+}
+
+</script>
+
+
+
+
+<!-- 2. Print the character which is repeated max no of times
+   input: 'hello world'
+   output : 'L' -->
+
+
+
+
+
+
+<!-- 3. Swap The case for Each Character in a string 
+   input: 'Hello World'
+   output: 'hELLO wORLD' -->
+
+<script> 
+let str1 = 'Hello World';
+let res = '';
+for (let i = 0; i < str1.length; i++) {
+
+  if (str1[i] === str1[i].toLowerCase()) {
+    res += str1[i].toUpperCase();
+  } 
+  else {
+    res += str1[i].toLowerCase();
+  }
+}
+console.log(res); 
+</script>
+
+
+
+
+
+<!-- 4. Print the Abbreviation for a string
+   input: 'Rabindra Nath Tagore'
+   output: 'R. N. tagore' -->
+<script>
+let str3='Rabindra Nath Tagore'
+let arr=str3.split(" ");
+let res1=arr[0][0]+"."+" "+arr[1][0]+"."+" "+arr[2].toLowerCase();
+console.log(res1);
+</script>
+
+
+
+
+
+<!-- 5. Shift the characters by the next character
+   input:  'abcxyz'
+   output: 'bcdyza' -->
+<script>
+   let str5 = "abcxyz";
+let result = "";
+
+for (let i = 0; i < str5.length; i++) {
+  if (str5[i] === 'z') {
+    result += 'a';  
+  } else {
+    result += String.fromCharCode(str5[i].charCodeAt(0) + 1);
+  }
+}
+console.log(result); 
+
+</script>
+
+
+
+<!-- 6. Ask user to enter a sequence of parantheses and validate 
+   input: '([{ }])'  
+   output : true -->
+
+
+
+
+<!-- 7. Ask user to enter a 3 letter word, print all the permutations using those 3 letters.
+    input: 'ABC'
+    output: ABC , ACB , BCA, BAC ... -->
+
+
+
+
+<!-- 8. Ask user to enter a number and convert that to Roman value
+   input:   9    12
+   output : IX   XII -->
+
+
+
+
+<!-- 9. Ask user to enter a roman string and convert that to integer value
+   input:   IX    XII
+   output : 9     12  -->
